@@ -1,328 +1,329 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>A.MLeather | محصولات چرمی</title>
+    <title>A.MLeather | محصولات چرمی</title>
 
-<style>
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
+    <style>
 
-body{
-    font-family:Tahoma, Arial, sans-serif;
-    background:#0b0b0b;
-    color:#f5f5f5;
-    line-height:1.8;
-}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-header{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:30px;
-    background:
-        radial-gradient(circle at center, #302510 0%, #111 35%, #050505 80%);
-}
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background: #111;
+            color: #eee;
+            line-height: 2;
+        }
 
-.hero{
-    max-width:850px;
-}
+        header {
+            text-align: center;
+            padding: 70px 20px;
+            background: linear-gradient(
+                rgba(0,0,0,.75),
+                rgba(0,0,0,.95)
+            );
+        }
 
-.logo{
-    font-size:58px;
-    font-weight:bold;
-    color:#d4af37;
-    letter-spacing:3px;
-    margin-bottom:10px;
-}
+        .logo {
+            font-size: 42px;
+            color: #d4af37;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
 
-.line{
-    width:90px;
-    height:3px;
-    background:#d4af37;
-    margin:20px auto;
-}
+        header p {
+            margin-top: 15px;
+            color: #ccc;
+            font-size: 18px;
+        }
 
-.hero h1{
-    font-size:34px;
-    margin-bottom:15px;
-}
+        section {
+            padding: 55px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
 
-.hero p{
-    color:#cfcfcf;
-    font-size:18px;
-    margin-bottom:30px;
-}
+        .title {
+            text-align: center;
+            color: #d4af37;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
 
-.btn{
-    display:inline-block;
-    padding:13px 30px;
-    border:1px solid #d4af37;
-    border-radius:30px;
-    color:#d4af37;
-    text-decoration:none;
-    transition:.3s;
-}
+        .intro {
+            text-align: center;
+            color: #ddd;
+            max-width: 750px;
+            margin: auto;
+            font-size: 17px;
+        }
 
-.btn:hover{
-    background:#d4af37;
-    color:#000;
-}
+        .products {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(220px, 1fr)
+            );
+            gap: 25px;
+            margin-top: 35px;
+        }
 
-section{
-    padding:70px 20px;
-    max-width:1100px;
-    margin:auto;
-}
+        .card {
+            background: #1c1c1c;
+            border: 1px solid #333;
+            border-radius: 15px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: .3s;
+        }
 
-.title{
-    text-align:center;
-    color:#d4af37;
-    font-size:30px;
-    margin-bottom:45px;
-}
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #d4af37;
+        }
 
-.about{
-    text-align:center;
-    color:#ccc;
-    max-width:750px;
-    margin:auto;
-    font-size:17px;
-}
+        .icon {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
 
-.products{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-    gap:25px;
-}
+        .card h3 {
+            color: #d4af37;
+            font-size: 23px;
+            margin-bottom: 10px;
+        }
 
-.card{
-    background:#151515;
-    border:1px solid #292929;
-    border-radius:18px;
-    padding:30px 20px;
-    text-align:center;
-    transition:.3s;
-}
+        .card p {
+            color: #ccc;
+            font-size: 15px;
+        }
 
-.card:hover{
-    transform:translateY(-7px);
-    border-color:#d4af37;
-}
+        .contact {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 18px;
+            padding: 40px 25px;
+            text-align: center;
+        }
 
-.icon{
-    font-size:55px;
-    margin-bottom:15px;
-}
+        .contact p {
+            color: #ccc;
+            margin-bottom: 20px;
+        }
 
-.card h3{
-    color:#d4af37;
-    margin-bottom:10px;
-}
+        .btn {
+            display: inline-block;
+            margin: 8px;
+            padding: 10px 22px;
+            border: 1px solid #d4af37;
+            border-radius: 30px;
+            color: #d4af37;
+            text-decoration: none;
+            transition: .3s;
+        }
 
-.card p{
-    color:#aaa;
-    font-size:14px;
-}
+        .btn:hover {
+            background: #d4af37;
+            color: #111;
+        }
 
-.contact{
-    text-align:center;
-    background:#111;
-    border-radius:25px;
-    padding:50px 20px;
-}
+        .address {
+            margin-top: 25px;
+            font-size: 15px;
+            color: #bbb;
+        }
 
-.contact p{
-    color:#ccc;
-    margin-bottom:25px;
-}
+        footer {
+            text-align: center;
+            padding: 30px 15px;
+            border-top: 1px solid #333;
+            color: #888;
+            margin-top: 30px;
+        }
 
-footer{
-    text-align:center;
-    padding:25px;
-    color:#777;
-    border-top:1px solid #222;
-}
+        .gold {
+            color: #d4af37;
+        }
 
-.gold{
-    color:#d4af37;
-}
-
-@media(max-width:600px){
-    .logo{
-        font-size:42px;
-    }
-
-    .hero h1{
-        font-size:27px;
-    }
-
-    .hero p{
-        font-size:16px;
-    }
-}
-</style>
+    </style>
 </head>
 
 <body>
 
-<header>
-    <div class="hero">
+    <header>
 
-        <div class="logo">A.MLeather</div>
-
-        <div class="line"></div>
-
-        <h1>هنر چرم، ظرافت در جزئیات</h1>
-
-        <p>
-            تولید و عرضه محصولات چرمی با کیفیت،
-            طراحی خاص و توجه به کوچک‌ترین جزئیات.
-        </p>
-
-        <a href="#products" class="btn">
-            مشاهده محصولات
-        </a>
-
-    </div>
-</header>
-
-
-<section>
-
-    <h2 class="title">درباره A.MLeather</h2>
-
-    <div class="about">
-        <p>
-            در <span class="gold">A.MLeather</span>
-            تلاش می‌کنیم زیبایی، کیفیت و اصالت چرم را
-            در محصولاتی ماندگار کنار هم قرار دهیم.
-        </p>
-
-        <br>
-
-        <p>
-            هر محصول با دقت انتخاب و آماده می‌شود
-            تا همراهی شیک و ماندگار برای شما باشد.
-        </p>
-    </div>
-
-</section>
-
-
-<section id="products">
-
-    <h2 class="title">محصولات ما</h2>
-
-    <div class="products">
-
-        <div class="card">
-            <div class="icon">👜</div>
-            <h3>کیف چرمی</h3>
-            <p>
-                کیف‌های چرمی شیک و باکیفیت
-                مناسب استفاده روزمره و رسمی.
-            </p>
+        <div class="logo">
+            A.MLeather
         </div>
 
-        <div class="card">
-            <div class="icon">👛</div>
-            <h3>کیف پول چرمی</h3>
-            <p>
-                طراحی کاربردی و ظریف
-                با استفاده از چرم باکیفیت.
-            </p>
-        </div>
-
-        <div class="card">
-            <div class="icon">〰️</div>
-            <h3>کمربند چرمی</h3>
-            <p>
-                کمربندهای چرمی با طراحی ساده،
-                شیک و ماندگار.
-            </p>
-        </div>
-
-        <div class="card">
-            <div class="icon">💳</div>
-            <h3>جاکارتی</h3>
-            <p>
-                کوچک، کاربردی و مناسب
-                برای استفاده روزمره.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-
-<section>
-
-    <div class="contact">
-
-        <h2 class="title">سفارش و ارتباط با ما</h2>
-
         <p>
-            برای مشاهده محصولات و ثبت سفارش
-            با ما در ارتباط باشید.
+            تولید و عرضه محصولات چرمی دست‌دوز
         </p>
 
-        <a
-        href="https://instagram.com/"
-        target="_blank"
-        class="btn">
-            Instagram
-        </a>
-
-    </div>
-
-</section>
+    </header>
 
 
-<footer>
+    <section>
 
-    <p>
-        © 2026
-        <span class="gold">A.MLeather</span>
-        — تمامی حقوق محفوظ است.
-    </p>
+        <h2 class="title">
+            درباره A.MLeather
+        </h2>
 
-</footer>
+        <p class="intro">
+            A.MLeather با تمرکز بر تولید محصولات چرمی
+            باکیفیت، شیک و ماندگار فعالیت می‌کند.
+            هدف ما ارائه محصولاتی زیبا و کاربردی
+            برای استفاده روزمره شماست.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2 class="title">
+            محصولات ما
+        </h2>
+
+        <div class="products">
+
+            <div class="card">
+
+                <div class="icon">👛</div>
+
+                <h3>
+                    کیف پول چرمی
+                </h3>
+
+                <p>
+                    کیف پول‌های چرمی شیک،
+                    مقاوم و مناسب استفاده روزمره.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">👜</div>
+
+                <h3>
+                    کیف چرمی
+                </h3>
+
+                <p>
+                    طراحی زیبا و کیفیت مناسب
+                    برای استفاده روزمره و رسمی.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">➰</div>
+
+                <h3>
+                    کمربند چرمی
+                </h3>
+
+                <p>
+                    کمربندهای چرمی با طراحی ساده،
+                    شیک و ماندگار.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">💳</div>
+
+                <h3>
+                    جاکارتی
+                </h3>
+
+                <p>
+                    کوچک، کاربردی و مناسب
+                    برای استفاده روزمره.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <div class="contact">
+
+            <h2 class="title">
+                سفارش و ارتباط با ما
+            </h2>
+
+            <p>
+                برای مشاهده محصولات و ثبت سفارش
+                با ما در ارتباط باشید.
+            </p>
+
+
+            <a
+                href="https://instagram.com/a.m__leather"
+                target="_blank"
+                class="btn">
+                📸 Instagram
+            </a>
+
+
+            <a
+                href="https://wa.me/989108760709"
+                target="_blank"
+                class="btn">
+                💬 WhatsApp
+            </a>
+
+
+            <a
+                href="tel:09108760709"
+                class="btn">
+                📞 تماس با ما
+            </a>
+
+
+            <div class="address">
+
+                📍 تهران، استان بهارستان، صالحیه،
+                خیابان بیست‌متری، میلان ۲۰، پلاک ۲
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026
+            <span class="gold">
+                A.MLeather
+            </span>
+            — تمامی حقوق محفوظ است.
+        </p>
+
+    </footer>
 
 </body>
+
 </html>
-     
-<section class="contact">
-  <h2>ارتباط با ما</h2>
-
-  <p>📸 اینستاگرام:
-    <a href="https://instagram.com/a.m__leather" target="_blank">
-      @a.m__leather
-    </a>
-  </p>
-
-  <p>💬 واتساپ:
-    <a href="https://wa.me/989108760709" target="_blank">
-      09108760709
-    </a>
-  </p>
-
-  <p>📞 تلفن:
-    <a href="tel:09108760709">
-      09108760709
-    </a>
-  </p>
-
-  <p>📍 آدرس:
-    تهران، استان بهارستان، صالحیه،
-    خیابان بیست‌متری، میلان ۲۰، پلاک ۲
-  </p>
-</section>
+        
